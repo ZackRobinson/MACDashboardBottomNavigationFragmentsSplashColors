@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MACDashboardBottomNavigationFragmentsSplashColors</string>
+    <string name="app_name">MAC Dashboard</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -13,4 +13,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_account">Account</string>
+    <string name="title_pay">Pay</string>
+    <string name="title_benefits">Benefits</string>
+    <string name="title_training">Training</string>
+    <string name="title_marketing">Marketing</string>
 </resources>
