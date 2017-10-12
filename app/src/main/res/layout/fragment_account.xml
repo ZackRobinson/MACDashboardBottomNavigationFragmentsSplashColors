@@ -1,0 +1,437 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/tvContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Contacts"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivChevron"
+                        android:layout_width="32dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="7dp"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/tvContact"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tvName1"
+
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Lou Smith"
+                        app:layout_constraintBottom_toTopOf="@+id/tvPosition1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvContact" />
+
+
+                    <TextView
+                        android:id="@+id/tvPosition1"
+
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="84dp"
+                        android:gravity="center_vertical|right"
+                        android:text="Project Manager"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivPosition1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="84dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tvPhone1"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="(814)525-1519"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPosition1" />
+
+                    <ImageView
+                        android:id="@+id/ivPhone1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivPosition1"
+                        app:srcCompat="@drawable/ic_phone_black_24dp"
+                        tools:layout_editor_absoluteY="114dp" />
+
+                    <TextView
+                        android:id="@+id/tvSkype1"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="lou.smith@BrighterBrain.com"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvEmail1" />
+
+                    <ImageView
+                        android:id="@+id/ivSkype1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivPhone1"
+                        app:srcCompat="@drawable/ic_skype"
+                        tools:layout_editor_absoluteY="144dp" />
+
+
+                    <TextView
+                        android:id="@+id/tvEmail1"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="lou.smith_3"
+                        app:layout_constraintHorizontal_bias="0.333"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPhone1" />
+
+                    <ImageView
+                        android:id="@+id/ivEmail1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivSkype1"
+                        app:srcCompat="@drawable/ic_email_black_24dp"
+                        tools:layout_editor_absoluteY="174dp" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/colorAccentLight"
+                android:orientation="vertical">
+
+
+                <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvName2"
+
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Manroop Singh"
+                        app:layout_constraintBottom_toTopOf="@+id/tvPosition2"
+                        app:layout_constraintHorizontal_bias="0.511"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/tvPosition2"
+
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="46dp"
+                        android:gravity="center_vertical|right"
+                        android:text="Android Trainer"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivPosition2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="46dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tvPhone2"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="(814)525-1519"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPosition2" />
+
+                    <ImageView
+                        android:id="@+id/ivPhone2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivPosition2"
+                        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tvSkype2"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="zwr.professional@gmail.com"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvEmail2" />
+
+                    <ImageView
+                        android:id="@+id/ivSkype2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivPhone2"
+                        app:srcCompat="@drawable/ic_skype" />
+
+
+                    <TextView
+                        android:id="@+id/tvEmail2"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="zwr.professional@gmail.com"
+                        app:layout_constraintHorizontal_bias="0.333"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPhone2" />
+
+                    <ImageView
+                        android:id="@+id/ivEmail2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivSkype2"
+                        app:srcCompat="@drawable/ic_email_black_24dp" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+
+
+                <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvName3"
+
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Hugo Marcs"
+                        app:layout_constraintBottom_toTopOf="@+id/tvPosition3"
+                        app:layout_constraintHorizontal_bias="0.511"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/tvPosition3"
+
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="46dp"
+                        android:gravity="center_vertical|right"
+                        android:text="Marketing Manager"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivPosition3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="46dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tvPhone3"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="(814)525-1519"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPosition3" />
+
+                    <ImageView
+                        android:id="@+id/ivPhone3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivPosition3"
+                        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tvSkype3"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="zwr.professional@gmail.com"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvEmail3" />
+
+                    <ImageView
+                        android:id="@+id/ivSkype3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivPhone3"
+                        app:srcCompat="@drawable/ic_skype" />
+
+
+                    <TextView
+                        android:id="@+id/tvEmail3"
+                        android:layout_width="325dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical|right"
+                        android:text="zwr.professional@gmail.com"
+                        app:layout_constraintHorizontal_bias="0.333"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPhone3" />
+
+                    <ImageView
+                        android:id="@+id/ivEmail3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivSkype3"
+                        app:srcCompat="@drawable/ic_email_black_24dp" />
+                </android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</FrameLayout>

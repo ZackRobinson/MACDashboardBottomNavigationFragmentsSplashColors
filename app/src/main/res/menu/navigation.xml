@@ -9,7 +9,7 @@
     <item
         android:id="@+id/navigation_pay"
         android:icon="@drawable/ic_attach_money_black_24dp"
-        android:title="@string/title_account" />
+        android:title="@string/title_pay" />
 
     <item
         android:id="@+id/navigation_benefits"
