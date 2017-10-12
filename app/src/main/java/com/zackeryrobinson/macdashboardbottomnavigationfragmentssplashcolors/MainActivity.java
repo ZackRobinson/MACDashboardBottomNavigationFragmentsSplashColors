@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity implements PayFragment.OnFra
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            FragmentManager fragmentManager;
-            FragmentTransaction fragmentTransaction;
             switch (item.getItemId()) {
                 case R.id.navigation_account:
 
